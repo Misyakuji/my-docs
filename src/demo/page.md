@@ -119,7 +119,7 @@ const MyComponent = defineComponent({
   ```component VPCard
   title: Misyakuji
   desc: Where there is light, there is hope
-  logo: https://mister-hope.com/logo.svg
-  link: https://mister-hope.com
+  logo: https://avatars.githubusercontent.com/u/73895385
+  link: https://xige.rainrem.top
   background: rgba(253, 230, 138, 0.15)
   ```
