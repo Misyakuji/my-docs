@@ -2,7 +2,7 @@
   "name": "my-blog",
   "description": "this is my blog",
   "version": "1.0.0",
-  "license": "WTFPL",
+  "license": "TIM",
   "type": "module",
   "scripts": {
     "docs:build": "vuepress-vite build src",
