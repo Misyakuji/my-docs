@@ -12,7 +12,6 @@ export default navbar([
     icon: "book",
     link: "/notes/",
   },
-  "/demo/",
   {
     text: "技术栈",
     icon: "pen-to-square",
