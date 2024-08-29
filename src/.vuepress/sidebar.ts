@@ -4,7 +4,7 @@ export default sidebar({
   "/": [
     "",
     {
-      text: "如何使用",
+      text: "使用样例",
       icon: "laptop-code",
       prefix: "demo/",
       link: "demo/",
@@ -14,6 +14,12 @@ export default sidebar({
       text: "文章",
       icon: "book",
       prefix: "posts/",
+      children: "structure",
+    },
+    {
+      text: "笔记",
+      icon: "book",
+      prefix: "notes/",
       children: "structure",
     },
     "intro",
