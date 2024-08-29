@@ -17,7 +17,7 @@ export default navbar([
     icon: "pen-to-square",
     prefix: "/notes/",
     children: [
-      { text: "Docker运维", icon: "pen-to-square", link: "docker" },
+      { text: "Docker运维", icon: "pen-to-square", link: "Linux/docker" },
       {
         text: "后端",
         icon: "pen-to-square",

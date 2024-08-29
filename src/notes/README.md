@@ -4,4 +4,13 @@ index: false
 icon: laptop-code
 ---
 
-<Catalog />
+## 常用技术
+
+- [前端](fontend/)
+
+- [后端](backend/)
+
+- [Linux](Linux/)
+
+- [Docker](docker.md)
+
