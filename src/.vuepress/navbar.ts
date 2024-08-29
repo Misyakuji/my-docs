@@ -2,46 +2,52 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
+  {
+    text: "文章",
+    icon: "book",
+    link: "/posts/",
+  },
+  {
+    text: "笔记",
+    icon: "book",
+    link: "/notes/",
+  },
   "/demo/",
   {
-    text: "博文",
+    text: "技术栈",
     icon: "pen-to-square",
-    prefix: "/posts/",
+    prefix: "/notes/",
     children: [
+      { text: "Docker运维", icon: "pen-to-square", link: "docker" },
       {
-        text: "苹果",
+        text: "后端",
         icon: "pen-to-square",
-        prefix: "apple/",
+        prefix: "backend/",
         children: [
-          { text: "苹果1", icon: "pen-to-square", link: "1" },
-          { text: "苹果2", icon: "pen-to-square", link: "2" },
-          "3",
-          "4",
+          { text: "Spring框架", icon: "pen-to-square", link: "Spring" },
+          { text: "SpringBoot框架", icon: "pen-to-square", link: "SpringBoot" },
+          "SpringCloud",
+          "Mybatis",
         ],
       },
       {
-        text: "香蕉",
+        text: "前端",
         icon: "pen-to-square",
-        prefix: "banana/",
+        prefix: "fontend/",
         children: [
           {
-            text: "香蕉 1",
+            text: "Vue",
             icon: "pen-to-square",
-            link: "1",
+            link: "Vue",
           },
           {
-            text: "香蕉 2",
+            text: "Angular",
             icon: "pen-to-square",
-            link: "2",
+            link: "Angular",
           },
-          "3",
-          "4",
+          "React",
         ],
       },
-      { text: "樱桃", icon: "pen-to-square", link: "cherry" },
-      { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
-      "tomato",
-      "strawberry",
     ],
   },
   {

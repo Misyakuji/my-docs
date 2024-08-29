@@ -1,15 +1,14 @@
 ---
+cover: /assets/images/cover2.jpg
 icon: pen-to-square
-date: 2024-08-10
+date: 2024-08-12
 category:
-  - 火龙果
-  - 水果
-tag:
-  - 红
-  - 大
+  - 萌新报到
+star: true
+sticky: true
 ---
 
-# 火龙果
+# 文章
 
 ## 标题 2
 

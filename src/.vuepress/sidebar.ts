@@ -4,22 +4,24 @@ export default sidebar({
   "/": [
     "",
     {
-      text: "使用样例",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
-    },
-    {
       text: "文章",
       icon: "book",
       prefix: "posts/",
+      link: "posts/",
       children: "structure",
     },
     {
       text: "笔记",
       icon: "book",
       prefix: "notes/",
+      link: "notes/",
+      children: "structure",
+    },
+    {
+      text: "使用样例",
+      icon: "laptop-code",
+      prefix: "demo/",
+      link: "demo/",
       children: "structure",
     },
     "intro",
