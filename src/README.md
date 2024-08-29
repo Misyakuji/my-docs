@@ -4,9 +4,9 @@ layout: BlogHome
 icon: home
 title: 主页
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: 你博客的名称
-heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+heroText: 𝓜𝓲𝓼𝔂𝓪𝓴𝓾𝓳𝓲
+heroFullScreen: false
+tagline: 𝒯𝒽𝑒 𝓅𝓊𝓇𝓈𝓾𝒾𝓉 𝑜𝒻 𝓀𝓃𝑜𝓌𝓁𝑒𝒹𝑔𝑒 𝒾𝓈 𝑒𝓃𝒹𝓁𝑒𝓈𝓈
 projects:
   - icon: project
     name: 项目名称
@@ -38,11 +38,5 @@ projects:
     desc: 自定义详细介绍
     link: https://你的自定义链接
 
-footer: 自定义你的页脚文字
+footer: 当前网站持续建设中~
 ---
-
-这是一个博客主页的案例。
-
-要使用此布局，你应该在页面前端设置 `layout: BlogHome` 和 `home: true`。
-
-相关配置文档请见 [博客主页](https://theme-hope.vuejs.press/zh/guide/blog/home.html)。
