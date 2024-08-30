@@ -19,5 +19,5 @@ projects:
     icon: https://theme-hope-assets.vuejs.press/logo.svg
 
 
-footer: 当前网站持续建设中~
+footer: Use <a href='https://theme-hope.vuejs.press/zh/'>VuePress Theme Hope</a> | <a href='intro.html' target='_blank'>关于我</a>
 ---
