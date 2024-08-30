@@ -11,37 +11,45 @@ tag:
 ## WSL环境搭建
 
 #### 官方环境搭建参照
+
 https://learn.microsoft.com/zh-cn/windows/wsl/setup/environment
 
 #### 开启WSL
 
 ###### 打开虚拟机平台功能：
+
 ```
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
+
 ###### 打开适用于Linux的Windows子系统功能：
+
 ```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
 #### 更新Linux内核
+
 下载最新安装包：
+
 - [适用于x64计算机的 WSL2 Linux内核更新包](https://link.zhihu.com/?target=https%3A//wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)。
 
 #### 设置WSL2为默认版本
 
 以管理员方式运行PowerShell运行命令，输入命令。
+
 ```
 wsl --set-default-version 2
 ```
 
 #### 安装发行版Linux
 
- 微软商店直接安装
+微软商店直接安装
 
 [【WSL】WSL折腾之旅（2）安装ZSH和Docker - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/355493751)
 
-####  列出WSL子系统
+#### 列出WSL子系统
+
 ```
 wslconfig /list
 wslconfig /l
@@ -54,44 +62,53 @@ wsl -l -o
 ```
 
 #### 安装发行版
+
 ```
 wsl --install -d Debian
 
 ```
 
 #### 关闭Debian子系统
+
 ```
 wsl --terminate debian
 wsl -t debian
 ```
 
 #### 关闭WSL
+
 ```
 wsl --shutdown
 ```
 
 #### 启动WSL
+
 ```
 wsl
 ```
 
 #### 注销指定的子系统
+
 ```
 wslconfig /u Debian
 ```
 
 #### 切换登录默认用户
+
 ```powershell
 C:\Users\[用户名]\AppData\Local\Microsoft\WindowsApps\debian.exe config --default-user root
 ```
 
 #### 设置默认发行版
+
 ```shell
 wsl --set-default debian
 ```
 
 #### wsl使用systemd
-#访问 [官方文档](https://learn.microsoft.com/zh-cn/windows/wsl/systemd#how-to-enable-systemd) 
+
+#访问 [官方文档](https://learn.microsoft.com/zh-cn/windows/wsl/systemd#how-to-enable-systemd)
+
 ```shell
 # 在/etc/wsl.conf中添加以下内容：
 [boot]
@@ -103,10 +120,10 @@ systemd=true
 systemctl list-unit-files --type=service
 ```
 
-
 ## Linux常用操作(debian系)
 
 #### Debian 发行版与代号
+
 ```
 Debian 7 - Wheezy
 Debian 8 - Jessie
@@ -118,6 +135,7 @@ Debian 13 - Trixie (开发中)
 ```
 
 #### 换源
+
 ```properties
 # 中科大镜像站
 deb http://mirrors.ustc.edu.cn/debian/ bullseye main contrib non-free
@@ -143,7 +161,9 @@ deb http://deb.debian.org/debian bookworm-updates main
 deb http://security.debian.org/debian-security bookworm-security main
 deb http://ftp.debian.org/debian bookworm-backports main
 ```
+
 #### 一键更新软件包
+
 ```shell
 sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
 ```
@@ -153,6 +173,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
 ```shell
 sudo apt install vim wget curl git gcc g++ systemctl net-tools neofetch openjdk-17-jdk maven nodejs npm ssh nmap redis mariadb
 ```
+
 #### sudo 免密码
 
 ```shell
@@ -197,6 +218,7 @@ xrandr --addmode <显示器名称> 1920x1080_60.00
 xrandr --output HDMI-1 --mode 1920x1080_60.00
 请注意，这些命令可能需要根据您的系统和硬件进行调整。W
 ```
+
 #### 修改用户目录的中文文件夹为英文
 
 ```shell
@@ -321,7 +343,7 @@ nvm install latest
 nvm install 20.11.0
 
 # 查看当前已安装的Node.js版本,可以缩写为 nvm ls
-nvm list 
+nvm list
 
 # 切换到指定版本的Node.js
 nvm use 20.11.0
@@ -335,7 +357,9 @@ nvm node_mirror https://npmmirror.com/mirrors/node/
 # 设置npm镜像地址
 nvm npm_mirror https://npmmirror.com/mirrors/npm/
 ```
+
 #### npm换源
+
 ```shell
 # npm查看当前源
 npm config get registry
@@ -352,9 +376,8 @@ npm 官方原始镜像：https://registry.npmjs.org/
 中科院大学开源镜像站：http://mirrors.ustc.edu.cn/
 ```
 
-
-
 #### JAVA环境安装
+
 ```shell
 # 安装jdk
 apt install openjdk-17-jdk

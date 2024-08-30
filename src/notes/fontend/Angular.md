@@ -43,7 +43,7 @@ Angular 是一个开源的前端框架，由 Google 维护，主要用于构建�
 - **定义**  
   模板是 Angular 组件的视图部分，使用 HTML 和 Angular 特有的模板语法来定义界面布局。
 
-- **数据绑定**  
+- **数据绑定**
   - **插值表达式**：`{{ expression }}`  
     在模板中显示数据的值。
   - **属性绑定**：`[property]="expression"`  
@@ -85,7 +85,7 @@ Angular 是一个开源的前端框架，由 Google 维护，主要用于构建�
 - **定义**  
   生命周期钩子是 Angular 提供的一组方法，用于在组件或指令的不同生命周期阶段执行特定操作。
 
-- **常用钩子**  
+- **常用钩子**
   - `ngOnInit()`：初始化组件或指令。
   - `ngOnChanges(changes: SimpleChanges)`：检测输入属性的变化。
   - `ngOnDestroy()`：清理工作，销毁组件或指令。
@@ -106,7 +106,7 @@ Angular 是一个开源的前端框架，由 Google 维护，主要用于构建�
 - **定义**  
   管道用于格式化数据。通过管道，可以在模板中转换数据，例如格式化日期或货币。
 
-- **常用管道**  
+- **常用管道**
   - `DatePipe`：格式化日期。
   - `CurrencyPipe`：格式化货币。
   - `DecimalPipe`：格式化数字。
@@ -149,5 +149,3 @@ Angular 是一个开源的前端框架，由 Google 维护，主要用于构建�
 - [Angular 官方文档](https://angular.io/docs)
 - [Angular GitHub 仓库](https://github.com/angular/angular)
 - [Angular CLI 官方文档](https://angular.io/cli)
-
-

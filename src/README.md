@@ -18,6 +18,5 @@ projects:
     link: https://theme-hope.vuejs.press/zh/
     icon: https://theme-hope-assets.vuejs.press/logo.svg
 
-
 footer: Use <a href='https://theme-hope.vuejs.press/zh/'>VuePress Theme Hope</a> | <a href='intro.html' target='_blank'>关于我</a>
 ---

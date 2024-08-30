@@ -88,5 +88,3 @@ Spring Boot 是一个基于 Spring 框架的扩展，用于简化 Spring 应用�
 ## 6. 总结
 
 Spring Boot 通过自动配置、起步依赖、内嵌服务器和 Actuator 等功能简化了 Spring 应用程序的开发和部署过程。它提供了一种开箱即用的方式来构建和管理 Spring 应用程序，使得开发者能够更专注于业务逻辑的实现。
-
-
