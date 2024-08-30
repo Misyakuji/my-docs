@@ -1,19 +1,35 @@
 {
   "name": "my-blog",
-  "description": "this is my blog",
+  "description": "Personal Blog Developed with VuePress",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
+  "author": "Misyakuji",
+  "keywords": [
+    "vuepress",
+    "personal-blog",
+    "blog"
+  ],
   "scripts": {
-    "docs:build": "vuepress-vite build src",
-    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
     "docs:dev": "vuepress-vite dev src",
-    "docs:update-package": "pnpm dlx vp-update"
+    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
+    "docs:update-package": "pnpm dlx vp-update",
+    "docs:build": "vuepress-vite build src",
+    "docs:build-debug": "cross-env DEBUG=vuepress* vuepress-vite build src",
+    "format": "prettier --write '**/*.{js,ts,css,html}'",
+    "lint": "prettier --check --write .",
+    "lint:check": "prettier --check .",
+    "lint:md": "markdownlint-cli2 **/*.md"
   },
-  "devDependencies": {
+  "dependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.14",
-    "vue": "^3.4.31",
+    "vue": "^3.4.38",
     "vuepress": "2.0.0-rc.14",
     "vuepress-theme-hope": "2.0.0-rc.52"
+  },
+  "devDependencies": {
+    "cross-env": "7.0.3",
+    "markdownlint-cli2": "0.13.0",
+    "prettier": "3.3.3"
   }
 }
