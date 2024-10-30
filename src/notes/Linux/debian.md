@@ -241,9 +241,8 @@ xrandr --output HDMI-1 --mode 1920x1080_60.00
 # xdg-user-dirs-gtk-update 是一个用于更新用户目录的工具，通常情况下已经预装在大多数 Linux 发行版中。如果您使用的是 Debian、Ubuntu、Fedora、openSUSE 或 Arch Linux 等主流发行版，那么 xdg-user-dirs-gtk-update 应该已经预装在您的系统中了，无需手动安装。如果您使用的是其他发行版或者自己编译的系统，则可能需要手动安装该工具
 sudo apt install xdg-user-dirs-gtk
 
-
-
 export LANG=en_US
+
 xdg-user-dirs-gtk-update
 # 跳出对话框询问是否将目录转化为英文路径,同意并关闭
 
@@ -265,10 +264,10 @@ nmap -p 6379 127.0.0.1
 # (ubuntu自带mysql源，可直接跳到最后一步安装)
 
 # 将 MySQL APT 存储库添加到系统，先到MySQL存储库下载页面，并使用以下wget命令下载最新的发行包：
-wget http://repo.mysql.com/mysql-apt-config_0.8.29-1_all.deb
+wget http://repo.mysql.com/mysql-apt-config_0.8.33-1_all.deb
 
 # 下载完成后，通过以下命令安装:
-sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.33-1_all.deb
 # 你将会看到MySQL配置安装菜单，选择你要安装的版本。
 # 默认选择了 MySQL 8.0，如果要安装 MySQL 5.7，请选择 MySQL Server ＆ Cluster（当前选择：mysql-8.0），然后选择对应的 MySQL 版本。
 # 通过按 Tab 键选择 “确定”，然后按 Enter 键
