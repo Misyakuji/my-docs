@@ -188,6 +188,22 @@ sudo vim /etc/sudoers.d/<用户名>
 <用户名> ALL=(ALL) NOPASSWD:ALL
 ```
 
+#### ssh配置
+
+```shell
+# 编辑sshd配置
+sudo vim /etc/ssh/sshd_config
+
+# 允许使用root用户通过SSH进行远程登录
+PermitRootLogin yes
+# 允许使用密码进行SSH认证
+PasswordAuthentication yes
+
+# 保持长连接
+ClientAliveInterval 0
+ClientAliveCountMax 0
+```
+
 #### 修改分辨率
 
 ```shell
