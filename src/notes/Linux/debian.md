@@ -376,7 +376,25 @@ npm 官方原始镜像：https://registry.npmjs.org/
 中科院大学开源镜像站：http://mirrors.ustc.edu.cn/
 ```
 
-#### JAVA环境安装
+#### MAVEN配置
+
+```shell
+# debian和ubuntu使用apt下载(一般版本较低，但无需配置环境变量)
+apt install maven
+# 官网下载
+wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
+tar -xzvf apache-maven-3.9.9-bin.tar.gz -C /opt
+
+#配置环境变量
+export MAVEN_HOME=/opt/apache-maven-3.9.9
+export M2_HOME=/opt/apache-maven-3.9.9
+export PATH=$M2_HOME/bin:$PATH
+
+# 验证maven环境
+mvn -v
+```
+
+#### JAVA环境配置
 
 ```shell
 # 安装jdk
@@ -387,6 +405,10 @@ apt install openjdk-21-jdk
 update-java-alternatives --list
 # jdk版本更换
 update-java-alternatives --set /usr/lib/jvm/java-1.17.0-openjdk-amd64
+
+#临时配置环境变量
+export JAVA_HOME=/usr/lib/jvm/java-1.17.0-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
 ```
 
 #### Git配置
@@ -405,17 +427,21 @@ git config --global credential.helper store
 git config --global core.autocrlf input
 ```
 
-#### 配置代理服务-v2ray
+#### 配置代理服务
 
 ```shell
-# 一键安装脚本
-https://github.com/233boy/v2ray
-
 su -
-
+# v2ray
+https://github.com/233boy/v2ray
+# v2ray一键安装脚本
 bash <(curl -s -L https://git.io/v2ray.sh)
 # 或者
 bash <(wget -qO- -o- https://git.io/v2ray.sh)
+
+# Xray
+https://233boy.com/xray/xray-script/
+# Xray一键安装脚本
+bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
 # 下载clash连接的yaml模板
 http://v2xtls.org/clash_template2.yaml
 ```
