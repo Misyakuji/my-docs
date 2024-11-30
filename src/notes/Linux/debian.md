@@ -91,6 +91,7 @@ wsl
 
 ```
 wslconfig /u Debian
+wsl --unregister Debian
 ```
 
 #### 切换登录默认用户
